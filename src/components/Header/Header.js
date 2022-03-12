@@ -16,37 +16,40 @@ import {
   SocialIcons,
 } from "./HeaderStyles";
 
+const J = "{ ";
+const e = "J";
+const a = " }";
+
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
         <a style={{ display: "flex", alignItems: "center", color: "white" }}>
-          <DiCssdeck size="3rem" /> <span>Portfolio</span>
+          <span style={{ color: "#B133FF" }}>{J} </span>
+          <span>{e}</span>
+          <span style={{ color: "#00DBD8" }}> {a}</span>
         </a>
       </Link>
     </Div1>
     <Div2>
       <li>
         <Link href="#projects">
-          <NavLink>Projects</NavLink>
+          <NavLink>Projetos</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#tech">
-          <NavLink>Technologies</NavLink>
+          <NavLink>Tecnologias</NavLink>
         </Link>
       </li>
       <li>
         <Link href="#about">
-          <NavLink>About</NavLink>
+          <NavLink>Skills</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
-      <SocialIcons
-        href="https://github.com/Jeann-Cavalcante"
-        target="_blank"
-      >
+      <SocialIcons href="https://github.com/Jeann-Cavalcante" target="_blank">
         <AiFillGithub size="3rem" />
       </SocialIcons>
       <SocialIcons
