@@ -44,7 +44,7 @@ const Header = () => (
     </Div2>
     <Div3>
       <SocialIcons
-        href="https://github.com/Jeann-Cavalcante/Jeann-Cavalcante"
+        href="https://github.com/Jeann-Cavalcante"
         target="_blank"
       >
         <AiFillGithub size="3rem" />
