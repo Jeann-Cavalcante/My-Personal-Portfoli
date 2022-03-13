@@ -1,15 +1,28 @@
-import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import React from "react";
 
-const Technologies = () =>  (
+import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import {
+  Section,
+  SectionDivider,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import {
+  List,
+  ListContainer,
+  ListItem,
+  ListParagraph,
+  ListTitle,
+} from "./TechnologiesStyles";
+
+
+const Technologies = () => (
   <Section id="tech">
     <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>Tecnologias</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      No momento estou trabalhando com as melhores stack de javascript, do
+      frontend ao backend e para design utilizo o figma.
     </SectionText>
     <List>
       <ListItem>
@@ -19,8 +32,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
+            React.js, Redux, Styled-Components, bootstrap
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -30,10 +42,7 @@ const Technologies = () =>  (
         </picture>
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
-          </ListParagraph>
+          <ListParagraph>Node, Mongo e Mysql</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
@@ -42,14 +51,12 @@ const Technologies = () =>  (
         </picture>
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Figma
-          </ListParagraph>
+          <ListParagraph>Figma</ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
     <SectionDivider colorAlt />
+    
   </Section>
 );
 

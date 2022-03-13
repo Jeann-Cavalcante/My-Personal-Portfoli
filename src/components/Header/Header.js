@@ -5,7 +5,6 @@ import {
   AiOutlineWhatsApp,
   AiFillLinkedin,
 } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
 
 import {
   Container,
@@ -15,6 +14,7 @@ import {
   NavLink,
   SocialIcons,
 } from "./HeaderStyles";
+
 
 const J = "{ ";
 const e = "J";
