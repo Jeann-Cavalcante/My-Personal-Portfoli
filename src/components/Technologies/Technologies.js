@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { DiFirebase, DiReact, DiZend,  } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -14,7 +14,6 @@ import {
   ListParagraph,
   ListTitle,
 } from "./TechnologiesStyles";
-
 
 const Technologies = () => (
   <Section id="tech">

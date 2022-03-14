@@ -1,45 +1,60 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import Carousel from "react-elastic-carousel";
-import Item from "./Item";
-import "./styles.css";
 
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 },
-];
+import {
+  DiReact,
+  DiCss3Full,
+  DiJavascript1,
+  DiNodejsSmall,
+  DiSass,
+  DiMongodb,
+  DiBootstrap,
+  DiFirebase,
+} from "react-icons/di";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { SiTypescript, SiNestjs } from "react-icons/si";
 
-function App() {
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
-  const addItem = () => {
-    const nextItem = Math.max(1, items.length + 1);
-    setItems([...items, nextItem]);
-  };
+import { Section } from "../../styles/GlobalComponents";
 
-  const removeItem = () => {
-    const endRange = Math.max(0, items.length - 1);
-    setItems(items.slice(0, endRange));
-  };
+import { CarouselStyle } from "./CarouselStyles";
 
-  return (
-    <div className="App">
-      <div className="controls-wrapper">
-        <button onClick={removeItem}>Remove Item</button>
-        <button onClick={addItem}>Add Item</button>
-      </div>
-      <hr className="seperator" />
-      <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
-          {items.map((item) => (
-            <Item key={item}>{item}</Item>
-          ))}
-        </Carousel>
-      </div>
-    </div>
-  );
-}
+const Carousel = () => (
+  <Section>
+    <CarouselStyle>
+      <ul>
+        <li>
+          <AiOutlineHtml5 size="8rem" />
+        </li>
+        <li>
+          <DiCss3Full size="8rem" />
+        </li>
+        <li>
+          <DiSass size="8rem" />
+        </li>
+        <li>
+          <DiBootstrap size="8rem" />
+        </li>
+        <li>
+          <DiJavascript1 size="8rem" />
+        </li>
+        <li>
+          <DiReact size="8rem" />
+        </li>
+        <li>
+          <DiNodejsSmall size="8rem" />
+        </li>
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+        <li>
+          <SiTypescript size="8rem" />
+        </li>
+        <li>
+          <DiMongodb size="8rem" />
+        </li>
+        <li>
+          <DiFirebase size="8rem" style={{ margin: "0px", padding: "0px" }} />
+        </li>
+      </ul>
+    </CarouselStyle>
+  </Section>
+);
+
+export default Carousel;
