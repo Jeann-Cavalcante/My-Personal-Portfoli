@@ -15,7 +15,6 @@ import {
   SocialIcons,
 } from "./HeaderStyles";
 
-
 const J = "{ ";
 const e = "J";
 const a = " }";
